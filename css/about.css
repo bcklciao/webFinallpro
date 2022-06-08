@@ -1,0 +1,149 @@
+@charset "UTF-8";
+/**
+*
+* @authors 陈钇弘 (you@example.org)
+* @date    2022-03-02 10:21:24
+* @version $Id$
+*/
+body{
+margin: 0;
+}
+p{
+margin: 0;
+}
+li{
+    list-style-type:none;
+    margin-top: 15px;   
+}
+
+.checked{
+    font-weight: bolder;
+}
+
+.checked:hover{
+
+}
+
+.vid{
+    background-color: #DFD4EA;
+}
+
+.vid>video{
+   width: 100%;
+   height: auto; 
+}
+
+.main-text{
+    background-color: #DFD4EA;
+    padding-bottom: 20px;
+}
+
+#midbox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9F9F9;
+}
+.main-text{
+    font-size: 14px;
+    padding-left: 10px;
+    -webkit-transition: 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
+    transition: 250ms cubic-bezier(.02, .01, .47, 1);
+}
+.midpic{
+    width: 200px;
+    height: 100px;
+    margin-left: 10px;
+    background-color: #F4F4F4;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.midpic>img{
+    width: 50%;
+}
+
+.foot-up{
+    padding-top: 8px;
+    padding-bottom: 5px;
+    top: 100px;
+    left: 60px;
+    right: 0;
+    font-size: 14px;
+    padding-left: 10px;
+    -webkit-transition: 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
+    transition: 250ms cubic-bezier(.02, .01, .47, 1);
+}
+
+
+.foot-down {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px 64px;
+    letter-spacing: 1px;
+    color: #666;
+}
+
+.bord{
+    background-color: #F9F9F9;
+    height: 50px;
+}
+
+.d-left {
+    margin-top: 5px;
+    text-align: left;
+    font-size: 8px;
+    letter-spacing: 0px;
+}
+
+.d-right {
+    margin-top: 5px;
+    margin-left: 0px;
+    text-align: left;
+    font-size: 10px;
+    letter-spacing: 0px;
+}
+
+#footpic1 img{
+            width:70px;
+            height:30px;
+
+}
+#footpic1{
+    text-align: center;
+}
+
+#footpic2 img{
+            width:70px;
+            height:30px;
+}
+
+#footpic2{
+    text-align: center;
+}
+
+.up-second{
+    font-size: 12x;
+}
+
+.up-third{
+    text-align: center;
+    font-size: 12x;
+}
+
+#title1{
+    margin-top: 10px;
+    margin-left: 0px;
+    font-size: 22x;
+    font-weight: bolder;
+}
+
+#title2{
+    margin-left: 20px;
+    font-size: 22x;
+    font-weight: bolder;
+    background-color: #F9F9F9;
+}

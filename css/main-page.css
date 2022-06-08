@@ -1,0 +1,330 @@
+@media screen and (min-width: 750px){
+/*================ main ===================*/
+	.main-background>img{
+		width: 100vw;
+	}
+	.main-hello{
+		position: absolute;
+		top: 10vw;
+		left: 10vh;
+	}
+	.main-hello>h3{
+		font-size: 26px;
+	}
+
+	.main-hello>p{
+		font-size: 19px;
+		width: 30vw;
+	}
+
+	.AddToBag{
+		height: 48px;
+		text-align: center;
+		border: 1px solid #000;
+		margin-top: 5vh;
+		display: flex;
+		align-items: center;
+	}
+
+	.AddToBag>span{
+		width: 40%;
+	}
+
+	.AddToBag>button{
+		width: 60%;
+		height: 100%;
+		border: none;
+		background-color: #000;
+		color: #fff;
+		font-size: 14px;
+		text-align: center;
+	}
+	.AddToBag>button .yeah{
+		opacity: 0;
+		padding: 10px;
+		position: absolute;
+		-webkit-transition: 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
+		transition: 250ms cubic-bezier(.02, .01, .47, 1);
+	}
+	.AddToBag>button:hover .yeah{
+		opacity: 1;
+		transform: translateY(-10px);
+	}
+	/*================ gallery ===================*/
+	.gallery{
+		height: 80vh;
+		width: 100%;
+	}
+	.gallery-bg{
+		width: 100vw;
+		height: 80vh;
+		opacity: 0.28;
+		position: absolute;
+		z-index: -1;
+	}
+	.gallery-title{
+	    font-size: 17px;
+	    font-weight: bolder;
+	    left: 65px;
+	    top: 61px;
+	    width: 80%;
+	    position: relative;
+	}
+	.gallery-products{
+		height: 90%;
+		width: 100%;
+		overflow: hidden;
+		position: absolute;
+	}
+
+	.gallery-products-inner{
+		width: 200vw;
+		left: 0;
+		position: relative;
+	}
+	/* 设置滚动条的样式 */
+	.gallery-products::-webkit-scrollbar {
+		display: none;	
+	}
+	.gallery-btn{
+	    position: absolute;
+	    margin-top: 40px;
+	    right: 60px;
+	    height: 25px;
+	}
+	.gallery-btn>span+span{
+		margin-left: 10px;
+	}
+	.gallery-btn>span{
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		text-align: center;
+		-webkit-transition: 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
+		transition: 250ms cubic-bezier(.02, .01, .47, 1);
+	}
+	.gallery-btn>span:hover{
+		background-color: #bbb;
+		border-radius: 30%;
+	}
+	/*================ card ===================*/
+	.products-card{
+		display: inline-block;
+		width: 30vw;
+		height: 60vh;
+	}
+	.products-card-img{
+		text-align: center;
+		width: 30vw;
+		height: 58vh;
+		-webkit-transition: 1s cubic-bezier(0.02, 0.01, 0.47, 1);
+		transition: 1s cubic-bezier(.02, .01, .47, 1);
+		position: absolute;
+	}
+	.products-card-img>a{
+		margin: 15vh 0px;
+	}
+	.products-card-img>a>img{
+		width: 23vw;
+		-webkit-transition: 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
+		transition: 250ms cubic-bezier(.02, .01, .47, 1);
+	}
+
+	.products-card-info{
+		opacity: 0;
+		font-size: 14px;
+		margin-top: 66vh;
+	    text-align: center;
+	    -webkit-transition: 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
+		transition: 250ms cubic-bezier(.02, .01, .47, 1);
+	}
+
+	.products-card-img:hover+.products-card-info{
+		opacity: 1;
+		color: #333;
+	}
+
+	.hover-img{
+		opacity: 0;
+		top: 20%;
+		left: 12%;
+		position: absolute;
+		z-index: -1;
+	}
+
+	.hover-base:hover{
+		width: 20vw;
+		margin-top: 20%;
+	}
+
+	.hover-base:hover~.hover-img{
+		opacity: 1;
+		z-index: -1;
+		width: 32vw;
+		transform: translateY(-20%) translateX(-15%);
+	}
+	.card-frame>a{
+		border: 8px solid #343436;
+		box-shadow: 0 13px 19px -1px hsl(0deg 0% 47% / 75%);
+		padding: 8px;
+		background-color: #fff;
+	}
+	.card-frame>a>img{
+		width: 14vw;
+	}
+}
+
+
+@media screen and (max-width: 750px){
+/*================ main ===================*/
+	.main-background>img{
+		content: url('../img/main-bg-small.jpg');
+		width: 100vw;
+	}
+	.main-hello{
+		padding: 5vw;
+	}
+	.main-hello>h3{
+		font-size: 25px;
+	}
+
+	.main-hello>p{
+		font-size: 19px;
+		width: 70%
+	}
+
+	.AddToBag{
+		width: 70%;
+		height: 48px;
+		text-align: center;
+		border: 1px solid #000;
+		margin-top: 5vh;
+		display: flex;
+		align-items: center;
+	}
+
+	.AddToBag>span{
+		width: 40%;
+	}
+
+	.AddToBag>button{
+		width: 60%;
+		height: 100%;
+		border: none;
+		background-color: #000;
+		color: #fff;
+		font-size: 14px;
+		text-align: center;
+	}
+	.AddToBag>button .yeah{
+		opacity: 0;
+		padding: 10px;
+		position: absolute;
+		-webkit-transition: 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
+		transition: 250ms cubic-bezier(.02, .01, .47, 1);
+	}
+	.AddToBag>button:hover .yeah{
+		opacity: 1;
+		transform: translateY(-10px);
+	}
+	/*================ gallery ===================*/
+	.gallery{
+		height: 62vh;
+		width: 100%;
+	}
+	.gallery-bg{
+		width: 100vw;
+		height: 62vh;
+		opacity: 0.28;
+		position: absolute;
+		z-index: -1;
+	}
+	.gallery-title{
+	    font-size: 17px;
+	    font-weight: bolder;
+	    left: 65px;
+	    top: 40px;
+	    width: 80%;
+	    position: relative;
+	}
+	.gallery-products{
+		height: 62vh;
+		width: 100%;
+		overflow-x: scroll;
+		overflow-y: hidden;
+		position: absolute;
+	}
+
+	.gallery-products-inner{
+		width: 200vw;
+		left: 0;
+		position: relative;
+	}
+	/* 设置滚动条的样式 */
+	.gallery-products::-webkit-scrollbar {
+		display: none;	
+	}
+	.gallery-btn{
+		display: none;
+	}
+	/*================ card ===================*/
+	.products-card{
+		display: inline-block;
+		width: 40vw;
+		height: 55vh;
+	}
+	.products-card-img{
+		text-align: center;
+		width: 40vw;
+		height: 50vh;
+		-webkit-transition: 1s cubic-bezier(0.02, 0.01, 0.47, 1);
+		transition: 1s cubic-bezier(.02, .01, .47, 1);
+		position: absolute;
+	}
+	.products-card-img>a{
+		margin: 8vh 0px;
+	}
+	.products-card-img>a>img{
+		width: 33vw;
+		-webkit-transition: 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
+		transition: 250ms cubic-bezier(.02, .01, .47, 1);
+	}
+
+	.products-card-info{
+		opacity: 1;
+		font-size: 14px;
+		margin-top: 47vh;
+	    text-align: center;
+	    -webkit-transition: 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
+		transition: 250ms cubic-bezier(.02, .01, .47, 1);
+	}
+
+	.hover-img{
+		opacity: 0;
+		top: 20%;
+		left: 12%;
+		position: absolute;
+		z-index: -1;
+	}
+
+	.hover-base:hover{
+		width: 30vw;
+		margin-top: 15%;
+	}
+
+	.hover-base:hover~.hover-img{
+		opacity: 1;
+		z-index: -1;
+		width: 42vw;
+		transform: translateY(-25%) translateX(-15%);
+	}
+	.card-frame>a{
+		border: 8px solid #343436;
+		box-shadow: 0 13px 19px -1px hsl(0deg 0% 47% / 75%);
+		padding: 8px;
+		background-color: #fff;
+	}
+	.card-frame>a>img{
+		width: 20vw;
+	}
+}
